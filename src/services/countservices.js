@@ -3,7 +3,7 @@
 // Route: GET /api/countorder → BDashboardController@orderStats
 // ------------------------
 export async function fetchCountOrder() {
-    const res = await fetch(`http://127.0.0.1:8000/api/countorder`);
+    const res = await fetch(`https://j-pich-back-main-ncxtwh.laravel.cloud/api/countorder`);
     return await res.json();   
     
 }
@@ -14,7 +14,7 @@ export async function fetchCountOrder() {
 // Route: GET /api/summoneyorder → BDashboardController@totalByMonth
 // ------------------------
 export async function fetchSumOrder() {
-    const res = await fetch(`http://127.0.0.1:8000/api/summoneyorder`);
+    const res = await fetch(`https://j-pich-back-main-ncxtwh.laravel.cloud/api/summoneyorder`);
     return await res.json();   
  
 }
@@ -24,7 +24,7 @@ export async function fetchSumOrder() {
 // Route: GET /api/anotherpaysum → BDashboardController@totalByMonthAnother
 // ------------------------
 export async function fetchSumAnother() {
-    const res = await fetch(`http://127.0.0.1:8000/api/anotherpaysum`);
+    const res = await fetch(`https://j-pich-back-main-ncxtwh.laravel.cloud/api/anotherpaysum`);
     return await res.json();    
 }
 
@@ -32,18 +32,18 @@ export async function fetchSumAnother() {
 
 // Count Product From Route: Route::get('productactive', [BDashbordController::class, 'countProduct']);
 export async function fetchCountAnother(){
-    const res = await fetch(`http://127.0.0.1:8000/api/anotherpaycount`);
+    const res = await fetch(`https://j-pich-back-main-ncxtwh.laravel.cloud/api/anotherpaycount`);
     return await res.json();
 }
 
 // Count Product From Route: Route::get('productactive', [BDashbordController::class, 'countProduct']);
 export async function fetchCountProducts(){
-    const res = await fetch('http://127.0.0.1:8000/api/productactive');
+    const res = await fetch('https://j-pich-back-main-ncxtwh.laravel.cloud/api/productactive');
       if (!res.ok) throw new Error("Failed to fetch product counts");
     return await res.json();
 }
 // Sumdiscount from route: Route::get('sumdiscount', [BOrdersController::class, 'countDiscount']);
-const discouts = 'http://127.0.0.1:8000/api/sumdiscount';
+const discouts = 'https://j-pich-back-main-ncxtwh.laravel.cloud/api/sumdiscount';
 
 
 export async function fetchDiscoutOrders(){

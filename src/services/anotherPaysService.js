@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://j-pich-back-main-ncxtwh.laravel.cloud/api';
 
 export class AnotherPaysService {
   static async getCountByMonth(month = null) {

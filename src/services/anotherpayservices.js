@@ -1,4 +1,4 @@
-const api = 'http://127.0.0.1:8000/api/anotherpay';
+const api = 'https://j-pich-back-main-ncxtwh.laravel.cloud/api/anotherpay';
 
 
 export async function fetchAnotherPays(){

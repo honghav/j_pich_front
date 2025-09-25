@@ -1,4 +1,4 @@
-const api = 'http://127.0.0.1:8000/api/orders';
+const api = 'https://j-pich-back-main-ncxtwh.laravel.cloud/api/orders';
 
 
 export async function fetchOrders(){

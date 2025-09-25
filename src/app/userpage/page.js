@@ -92,7 +92,7 @@ export default function ProductsPage() {
             </button>
 
             <img
-              src={`http://127.0.0.1:8000/storage/${previewImages[previewImageIndex]?.image_path}`}
+              src={`https://j-pich-back-main-ncxtwh.laravel.cloud/storage/${previewImages[previewImageIndex]?.image_path}`}
               alt="Preview"
               className="max-w-[90vw] max-h-[90vh] rounded shadow-lg"
             />
@@ -138,7 +138,7 @@ export default function ProductsPage() {
             <div key={pro.id} className="border rounded-lg p-4 shadow-sm bg-white hover:shadow-md transition duration-300">
               <div className="mb-3">
                 <img
-                  src={`http://127.0.0.1:8000/storage/${productImages[pro.id]?.[0]?.image_path}`}
+                  src={`https://j-pich-back-main-ncxtwh.laravel.cloud/storage/${productImages[pro.id]?.[0]?.image_path}`}
                   alt={`Image of ${pro.name}`}
                   className="w-full h-48 object-cover rounded cursor-pointer"
                   onClick={() => {
