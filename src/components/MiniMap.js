@@ -13,7 +13,7 @@ L.Icon.Default.mergeOptions({
 });
 
 export default function MiniMap() {
-  const position = [11.5564, 104.9282]; // Phnom Penh coordinates
+  const position = [12.077738222876402, 106.42095692942053]; // Phnom Penh coordinates
 
   return (
     <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{ height: '100%', width: '100%' }}>

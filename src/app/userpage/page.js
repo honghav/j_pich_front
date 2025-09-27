@@ -136,11 +136,11 @@ export default function ProductsPage() {
         ) : (
           filteredProducts.map((pro) => (
             <div key={pro.id} className="border rounded-lg p-4 shadow-sm bg-white hover:shadow-md transition duration-300">
-              <div className="mb-3">
+              <div className="mb-3 bg-gray-200 border ">
                 <img
                   src={`https://j-pich-back-main-ncxtwh.laravel.cloud/storage/${productImages[pro.id]?.[0]?.image_path}`}
                   alt={`Image of ${pro.name}`}
-                  className="w-full h-48 object-cover rounded cursor-pointer"
+                  className="w-full h-48 object-contain rounded cursor-pointer"
                   onClick={() => {
                     setPreviewImages(productImages[pro.id]);
                     setPreviewImageIndex(0);
@@ -152,7 +152,7 @@ export default function ProductsPage() {
                 <h2 className="text-lg font-semibold hover:underline">{pro.name}</h2>
               
 
-              <p className="text-sm text-gray-500">💰 ${pro.price}</p>
+              {/* <p className="text-sm text-gray-500">💰 ${pro.price}</p> */}
               <p className="text-sm text-gray-600">
                 📦 {categories.find(c => c.id === pro.category_id)?.name || '—'}
               </p>
@@ -160,7 +160,7 @@ export default function ProductsPage() {
               {/* Telegram Button */}
               <div className="mt-4 text-start">
                 <a
-                  href="https://t.me/leanghonghav"
+                  href="https://t.me/Sl_Decors"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"

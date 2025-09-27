@@ -3,8 +3,8 @@ import Navigation from '../components/Navigation';
 import '../app/globals.css';
 
 export const metadata = {
-  title: 'My App',
-  description: 'Next.js + Laravel',
+  title: 'ឆាយ សៀវឡាយ​ កាត់កញ្ជក់',
+  description: 'កាត់កញ្ជក់​ ស្រុកស្នួល ខេត្តក្រចេះ',
 };
 
 export default function RootLayout({ children }) {

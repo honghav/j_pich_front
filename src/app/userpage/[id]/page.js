@@ -64,7 +64,7 @@ export default function ProductDetailPage() {
               key={img.id}
               src={`https://j-pich-back-main-ncxtwh.laravel.cloud/storage/${img.image_path}`}
               alt={`Image ${index + 1}`}
-              className="w-20 h-20 object-cover rounded border cursor-pointer"
+              className="w-20 h-20 object-contain rounded border cursor-pointer"
               onClick={() => setCurrentImageIndex(index)}
             />
           ))}
@@ -75,11 +75,11 @@ export default function ProductDetailPage() {
       <div className="md:w-1/2 md:pl-6">
         <h1 className="text-2xl font-bold mb-2">ឈ្មោះទំនិញ: {product.name}</h1>
         <h1 className="text-xl font-bold mb-2">លេខកូត​ទំនិញ: {product.id}</h1>
-        <p className="text-lg mb-2">💰 តម្លៃ: $ <span className="text-green-800 font-bold text-2xl">{product.price}</span></p>
+        {/* <p className="text-lg mb-2">💰 តម្លៃ: $ <span className="text-green-800 font-bold text-2xl">{product.price}</span></p> */}
         <p className="text-md mb-2">📦 ប្រភេទទំនេញ: {category}</p>
         <div className="mt-4 ">
             <a
-              href="https://t.me/leanghonghav"
+              href="https://t.me/Sl_Decors"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
