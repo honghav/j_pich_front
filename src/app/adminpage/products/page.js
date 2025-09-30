@@ -215,7 +215,7 @@ export default function ProductsPage() {
             </button>
 
             <img
-              src={`https://j-pich-back-main-ncxtwh.laravel.cloud/storage/${previewImages[previewImageIndex]?.image_path}`}
+              src={`https://seavlia.shop/storage/${previewImages[previewImageIndex]?.image_path}`}
               alt="Preview"
               className="max-w-[90vw] max-h-[90vh] rounded shadow-lg"
             />
@@ -252,7 +252,7 @@ export default function ProductsPage() {
       <ImageUploadModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        apiUrl="https://j-pich-back-main-ncxtwh.laravel.cloud/api/productimages"
+        apiUrl="https://seavlia.shop/api/productimages"
       />
 
 
@@ -280,7 +280,7 @@ export default function ProductsPage() {
               productImages[pro.id]?.map((img, index) => (
               <img
                 key={img.id}
-                src={`https://j-pich-back-main-ncxtwh.laravel.cloud/storage/${img.image_path}`}
+                src={`https://seavlia.shop/storage/${img.image_path}`}
                 alt={`Image of ${pro.name}`}
                 className="w-[50px] h-[50px] object-cover rounded border flex-shrink-0 cursor-pointer"
                 onClick={() => {

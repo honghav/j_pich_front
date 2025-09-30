@@ -1,6 +1,6 @@
 
 export async function fetchProductImages(productid) {
-  const res = await fetch(`https://j-pich-back-main-ncxtwh.laravel.cloud/api/productbyimages/${productid}`);
+  const res = await fetch(`https://seavlia.shop/api/productbyimages/${productid}`);
   if (!res.ok) throw new Error('Failed to fetch product images');
   return await res.json(); // returns array of images for that product
 }
@@ -11,7 +11,7 @@ export async function fetchProductImages(productid) {
   //     return await res.json();
   // }
   
-const api = 'https://j-pich-back-main-ncxtwh.laravel.cloud/api/productimages'
+const api = 'https://seavlia.shop/api/productimages'
 export async function createProductImages(product) {
   const res = await fetch(api, {
     method: 'POST',

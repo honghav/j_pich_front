@@ -104,7 +104,7 @@ export default function CategoriesPage() {
               <td className="border px-4 py-2">
                 {cat.cover && (
                   <img
-                    src={`https://j-pich-back-main-ncxtwh.laravel.cloud/storage/${cat.cover}`}
+                    src={`https://seavlia.shop/storage/${cat.cover}`}
                     alt="cover"
                     className="h-12 object-cover"
                   />

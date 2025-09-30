@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://j-pich-back-main-ncxtwh.laravel.cloud/api';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://seavlia.shop/api';
 
 export class AnotherPaysService {
   static async getCountByMonth(month = null) {

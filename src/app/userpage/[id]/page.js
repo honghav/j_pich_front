@@ -50,9 +50,9 @@ export default function ProductDetailPage() {
         {/* Display first image */}
         {images.length > 0 && (
           <img
-            src={`https://j-pich-back-main-ncxtwh.laravel.cloud/storage/${images[0].image_path}`}
+            src={`https://seavlia.shop/storage/${images[0].image_path}`}
             alt={product.name}
-            className="w-full h-64 object-cover rounded mb-4 cursor-pointer"
+            className="w-full h-64 object-contain rounded mb-4 cursor-pointer"
             onClick={() => setCurrentImageIndex(0)}
           />
         )}
@@ -62,7 +62,7 @@ export default function ProductDetailPage() {
           {images.map((img, index) => (
             <img
               key={img.id}
-              src={`https://j-pich-back-main-ncxtwh.laravel.cloud/storage/${img.image_path}`}
+              src={`https://seavlia.shop/storage/${img.image_path}`}
               alt={`Image ${index + 1}`}
               className="w-20 h-20 object-contain rounded border cursor-pointer"
               onClick={() => setCurrentImageIndex(index)}
@@ -112,9 +112,9 @@ export default function ProductDetailPage() {
             </button>
 
             <img
-              src={`https://j-pich-back-main-ncxtwh.laravel.cloud/storage/${images[currentImageIndex]?.image_path}`}
+              src={`https://seavlia.shop/storage/${images[currentImageIndex]?.image_path}`}
               alt="Preview"
-              className="max-w-[90vw] max-h-[90vh] rounded shadow-lg"
+              className="max-w-[90vw] max-h-[90vh] rounded​ object-contain shadow-lg"
             />
 
             {/* Previous */}

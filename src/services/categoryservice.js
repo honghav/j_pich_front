@@ -1,10 +1,10 @@
 export async function fetchCategories() {
-  const res = await fetch('https://j-pich-back-main-ncxtwh.laravel.cloud/api/categories');
+  const res = await fetch('https://seavlia.shop/api/categories');
   return await res.json();
 }
 
 export async function createCategory(formData) {
-  const res = await fetch('https://j-pich-back-main-ncxtwh.laravel.cloud/api/categories', {
+  const res = await fetch('https://seavlia.shop/api/categories', {
     method: 'POST',
     body: formData,
   });
@@ -12,7 +12,7 @@ export async function createCategory(formData) {
 }
 
 export async function updateCategory(id, formData) {
-  const res = await fetch(`https://j-pich-back-main-ncxtwh.laravel.cloud/api/categories/${id}`, {
+  const res = await fetch(`https://seavlia.shop/api/categories/${id}`, {
     method: 'POST',
     body: formData,
     headers: {
@@ -23,7 +23,7 @@ export async function updateCategory(id, formData) {
 }
 
 export async function deleteCategory(id) {
-  await fetch(`https://j-pich-back-main-ncxtwh.laravel.cloud/api/categories/${id}`, {
+  await fetch(`https://seavlia.shop/api/categories/${id}`, {
     method: 'DELETE',
   });
 }

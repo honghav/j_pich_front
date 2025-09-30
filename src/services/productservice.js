@@ -1,4 +1,4 @@
-const api = 'https://j-pich-back-main-ncxtwh.laravel.cloud/api/products';
+const api = 'https://seavlia.shop/api/products';
 
 
 export async function fetchProductById(id) {
@@ -13,7 +13,7 @@ export async function fetchProducts(){
     return await res.json();
 }
 export async function fetchProductsStatus(){
-    const res = await fetch('https://j-pich-back-main-ncxtwh.laravel.cloud/api/productstatus');
+    const res = await fetch('https://seavlia.shop/api/productstatus');
     return await res.json();
 }
 

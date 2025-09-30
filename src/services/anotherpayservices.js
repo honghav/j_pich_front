@@ -1,4 +1,4 @@
-const api = 'https://j-pich-back-main-ncxtwh.laravel.cloud/api/anotherpay';
+const api = 'https://seavlia.shop/api/anotherpay';
 
 
 export async function fetchAnotherPays(){
