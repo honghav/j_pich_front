@@ -114,7 +114,7 @@ export default function ProductDetailPage() {
             <img
               src={`https://seavlia.shop/storage/${images[currentImageIndex]?.image_path}`}
               alt="Preview"
-              className="max-w-[90vw] max-h-[90vh] rounded​ object-contain shadow-lg"
+              className="w-90 h-90 rounded​ object-contain shadow-lg"
             />
 
             {/* Previous */}
